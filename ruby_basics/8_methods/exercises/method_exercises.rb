@@ -6,30 +6,46 @@
 # parameter: number (an integer)
 # return value: the number's ASCII character (https://www.ascii-code.com/)
 # hint: use Integer#chr
+def ascii_translator(number)
+  number.chr
+end
 
 
 # method name: #common_sports
 # parameters: current_sports and favorite_sports (both arrays)
 # return value: an array containing items in both arrays
 # hint: use Array#intersection
+def common_sports(current_sports, favorite_sports)
+  output = current_sports - favorite_sports
+  output
+end
 
 
 # method name: #alphabetical_list
 # parameter: games (an array)
 # return value: games, alphabetically sorted and duplicates removed
 # hint: chain Array#sort and Array#uniq together
+def alphabetical_list(games):
+  games.sort.uniq
+  
 
 
 # method name: #lucky_number
 # parameter: number (an integer) with default value of 7
 # return value: a string "Today's lucky number is <number>"
-
+def lucky_number(number = 7):
+  output = "Today's lucky number is #{number}"
+  output
 
 # method name: #ascii_code
 # parameter: character (a string)
 # return value: the character's ordinal number
 # explicit return value: 'Input Error' if character's length does not equal 1
 # hint: use String#ord
+def ascii_code(character):
+  if character.length != 1:
+    return "Input Error"
+  character.ord
 
 
 # method name: #pet_pun
